@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>模块示例</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+    <div id="fu-component"></div>
+</body>
+<script src="fu-component.js"></script>
+<script>
+    var myComponent = new FuComponent();
+    myComponent.renderDom(document.getElementById('fu-component'));
+    myComponent.init();
+    myComponent.sayHello('DengDeng');
+</script>
+</html>
+
